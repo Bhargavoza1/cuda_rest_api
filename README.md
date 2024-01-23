@@ -11,3 +11,15 @@ sudo cp /var/cuda-repo-wsl-ubuntu-12-3-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt-get update
 sudo apt-get -y install cuda-toolkit-12-3
 ```
+
+```bash
+export PATH="/usr/local/cuda-12.3/bin:$PATH"
+```
+Compile and run the program using the following commands in your terminal:
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./HttpServerCudaExample
+```
