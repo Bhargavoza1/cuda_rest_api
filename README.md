@@ -15,6 +15,13 @@ sudo apt-get -y install cuda-toolkit-12-3
 ```bash
 export PATH="/usr/local/cuda-12.3/bin:$PATH"
 ```
+
+install cpprestsdk
+```bash
+sudo apt-get install libcpprest-dev
+```
+
+
 Compile and run the program using the following commands in your terminal:
 ```bash
 mkdir build
